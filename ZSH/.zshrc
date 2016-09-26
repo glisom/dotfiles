@@ -1,5 +1,7 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/<username>/.oh-my-zsh
+username=$(id -un);
+
+export ZSH=/Users/$username/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -82,4 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cbn="~/.scripts/.copy_branch_name"
+alias cbn="sh ~/.scripts/.copy_branch_name"
