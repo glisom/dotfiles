@@ -30,5 +30,14 @@ mkdir -p ~/.scripts;
 cp -R scripts/. ~/.scripts;
 
 # Installing Applications
-echo 'Downloading Atom'
-open https://atom.io/download/mac
+echo 'Downloading Atom';
+open https://atom.io/download/mac;
+
+echo 'Downloading Spotify';
+open https://www.spotify.com/us/download/;
+
+# Set Terminal theme
+open "grant's_theme.terminal"
+
+# Setting Mac Preferences
+bash mac.sh
