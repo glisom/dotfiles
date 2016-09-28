@@ -85,3 +85,4 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="atom ~/.zshrc"
 alias ohmyzsh="atom ~/.oh-my-zsh"
 alias cbn="sh ~/.scripts/.copy_branch_name"
+alias gitlazy="sh ~/.scripts/.gitlazy"
