@@ -39,3 +39,5 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+
+osascript -e ‘tell application “Finder” to set desktop picture to POSIX file “/path/to/picture.jpg”’

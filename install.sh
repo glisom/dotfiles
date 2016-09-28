@@ -29,6 +29,14 @@ npm install -g bower;
 mkdir -p ~/.scripts;
 cp -R scripts/. ~/.scripts;
 
+# Download Wallpaper
+curl -O http://static.simpledesktops.com/uploads/desktops/2010/07/03/robotbbq.png
+
+# Download Screensaver
+curl -O https://github.com/JohnCoates/Aerial/releases/download/v1.1/Aerial.zip
+
+open Aerial.zip
+
 # Installing Applications
 echo 'Downloading Atom';
 open https://atom.io/download/mac;
@@ -41,3 +49,6 @@ open "grant's_theme.terminal"
 
 # Setting Mac Preferences
 bash mac.sh
+
+# Setting up git
+bash git.sh
