@@ -1,0 +1,26 @@
+# !/usr/bin/env bash
+
+apm install Zen
+apm install aesthetic-ui
+apm install atom-beautify
+apm install atom-django
+apm install atom-material-ui
+apm install autocomplete-python
+apm install chester-atom-syntax
+apm install git-time-machine
+apm install hard-wrap
+apm install language-dotfiles
+apm install linter
+apm install merge-conflicts
+apm install pigment
+apm install pretty-json
+apm install python-autopep8
+apm install python-tools
+apm install seti-icons
+apm install spacegray-dark-syntax
+apm install spacegray-dark-u
+apm install split-diff
+apm install terminal-plu
+apm install tetromino
+apm install true-xcode-syntax
+apm install yospos-ui

@@ -52,3 +52,6 @@ bash mac.sh
 
 # Setting up git
 bash git.sh
+
+# Setting up Atom
+bash apm.sh
