@@ -14,6 +14,7 @@ brew install rbenv;
 brew install pyenv;
 brew install mongodb;
 brew install node;
+brew install mas;
 
 # Install NPM and useful packages
 npm install npm -g;
