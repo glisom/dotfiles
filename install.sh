@@ -56,3 +56,6 @@ bash git.sh;
 
 # Setting up Atom
 bash apm.sh;
+
+# Setting up Mac App Store Apps
+bash mas.sh;
