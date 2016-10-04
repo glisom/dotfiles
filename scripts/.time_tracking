@@ -1,0 +1,15 @@
+puts 'Enter description:'
+description = gets.chomp
+begin
+    puts 'Press s to start:'
+    start = gets.chomp
+end until (start == 's')
+start_time = Time.now
+begin
+    puts 'Press q to stop the task.'
+    quit = gets.chomp
+end until (quit == 'q')
+end_time = Time.now
+total_time = end_time - start_time
+total_time = Time.at(total_time.to_i.abs).utc.strftime "%H:%M:%S"
+ puts "Time elapsed #{total_time} for #{description}"
