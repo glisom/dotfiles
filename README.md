@@ -6,4 +6,14 @@
 * xcode dev tools
 * homebrew
 * npm
-* 
+* Atom & apm packages/themes
+* Custom Terminal themes
+* Mac App Store Apps
+* git setup for Mac
+* MacOS settings
+* custom scripts
+* node
+* rbenv
+* pyenv
+
+### More to come
