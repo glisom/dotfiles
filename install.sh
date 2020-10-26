@@ -7,6 +7,15 @@ xcode-select --install
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
 cp -R ZSH/. ~/;
 
+# Install Spaceship Prompt
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+
+# Install ZSH-AutoSuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# Install ZSH-Syntax-Highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # Install Homebrew and useful tools
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 
@@ -31,7 +40,7 @@ mkdir -p ~/.scripts;
 cp -R scripts/. ~/.scripts;
 
 # Download Wallpaper
-curl -O http://static.simpledesktops.com/uploads/desktops/2010/07/03/robotbbq.png;
+curl -O http://static.simpledesktops.com/uploads/desktops/2020/06/28/Big_Sur_Simple.png;
 
 # Download Screensaver
 curl -O https://github.com/JohnCoates/Aerial/releases/download/v1.1/Aerial.zip;
@@ -39,8 +48,8 @@ curl -O https://github.com/JohnCoates/Aerial/releases/download/v1.1/Aerial.zip;
 open Aerial.zip;
 
 # Installing Applications
-echo 'Downloading Atom';
-open https://atom.io/download/mac;
+echo 'Downloading VSCode';
+open https://code.visualstudio.com/Download;
 
 echo 'Downloading Spotify';
 open https://www.spotify.com/us/download/;
@@ -55,7 +64,7 @@ bash mac.sh;
 bash git.sh;
 
 # Setting up Atom
-bash apm.sh;
+bash code.sh;
 
 # Setting up Mac App Store Apps
 bash mas.sh;
