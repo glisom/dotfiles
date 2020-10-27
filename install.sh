@@ -24,6 +24,7 @@ brew install pyenv;
 brew install mongodb;
 brew install node;
 brew install mas;
+brew install autojump;
 
 # Install NPM and useful packages
 npm install npm -g;
