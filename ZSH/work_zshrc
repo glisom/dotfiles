@@ -1,0 +1,46 @@
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+eval "$(pyenv init --path)"
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/grantisom/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="spaceship"
+
+ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+plugins=(git autojump macos lein marked2 thefuck zshmarks sudo zsh-autosuggestions zsh-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
+# Aliases
+alias zshconfig="code ~/.zshrc"
+alias ohmyzsh="code ~/.oh-my-zsh"
+alias cbn="sh ~/.scripts/copy_branch_name"
+alias lfw="lein figwheel"
+alias atom="code"
+alias f="fuck"
+alias crgif="sh ~/.scripts/create_gif"
+alias countlines='git ls-files | xargs wc -l'
+[[ -s /Users/grantisom/.autojump/etc/profile.d/autojump.sh ]] && source /Users/grantisom/.autojump/etc/profile.d/autojump.sh
+
+autoload -U compinit && compinit -u
+
+export PYENV_ROOT="$HOME/.pyenv"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_281)
+
+eval "$(pyenv init -)"
+
+export PATH="/usr/local/opt/bzip2/bin:$PATH"
